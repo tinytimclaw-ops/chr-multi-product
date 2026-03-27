@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Book airport parking, hotels, and lounges with secure car storage and great rates across all UK airports.">
+
+  <title>Airport Parking</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Airport Parking, Hotels & Lounges">
+  <meta property="og:description" content="Book airport parking, hotels, and lounges with secure car storage and great rates">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Airport Parking, Hotels & Lounges">
+  <meta name="twitter:description" content="Book airport parking, hotels, and lounges with secure car storage">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://s3.amazonaws.com">
+
+  <!-- Fonts with display swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Airport Parking, Hotels & Lounges",
+    "description": "Book airport parking, hotels, and lounges with secure car storage",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Airport Parking"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img id="brandLogo" src="" alt="" class="logo" width="50" height="50">
+      <h1 id="brandName" class="brand-name"></h1>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="banner">
+    <img class="banner-img" src="assets/hero.jpg" alt="Your car is safe with us" width="1600" height="900" loading="eager">
+    <div class="banner-overlay">
+      <div class="banner-text">
+        <span class="banner-badge">Secure Parking</span>
+        <h2 class="banner-headline">Your car is safe with us</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Product Search Engine -->
+  <section class="search-section">
+    <div class="container">
+      <h2 class="search-title">Book your travel essentials</h2>
+
+      <!-- Product Tabs -->
+      <div class="product-tabs">
+        <button class="product-tab active" data-product="parking">
+          <span class="tab-icon">🅿️</span>
+          <span class="tab-label">Parking</span>
+        </button>
+        <button class="product-tab" data-product="hotel-parking">
+          <span class="tab-icon">🏨</span>
+          <span class="tab-label">Hotel + Parking</span>
+        </button>
+        <button class="product-tab" data-product="hotel">
+          <span class="tab-icon">🛏️</span>
+          <span class="tab-label">Hotel Only</span>
+        </button>
+        <button class="product-tab" data-product="lounge">
+          <span class="tab-icon">✈️</span>
+          <span class="tab-label">Lounge</span>
+        </button>
+      </div>
+
+      <!-- Search Forms -->
+      <div class="search-forms">
+        <!-- Parking Form -->
+        <form class="search-form active" id="parkingForm" data-product="parking">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parkingAirport">Airport</label>
+              <select id="parkingAirport" class="form-control" required>
+                <option value="">Select airport</option>
+                <option value="LHR">London Heathrow</option>
+                <option value="LGW">London Gatwick</option>
+                <option value="STN">London Stansted</option>
+                <option value="LTN">London Luton</option>
+                <option value="MAN">Manchester</option>
+                <option value="BHX">Birmingham</option>
+                <option value="EDI">Edinburgh</option>
+                <option value="GLA">Glasgow</option>
+                <option value="BRS">Bristol</option>
+                <option value="NCL">Newcastle</option>
+                <option value="LBA">Leeds Bradford</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parkingOutDate">Drop-off date</label>
+              <input type="date" id="parkingOutDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="parkingOutTime">Drop-off time</label>
+              <input type="time" id="parkingOutTime" class="form-control" value="06:00" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parkingInDate">Collection date</label>
+              <input type="date" id="parkingInDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="parkingInTime">Collection time</label>
+              <input type="time" id="parkingInTime" class="form-control" value="12:00" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Search parking</button>
+        </form>
+
+        <!-- Hotel + Parking Form -->
+        <form class="search-form" id="hotelParkingForm" data-product="hotel-parking">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hpAirport">Airport</label>
+              <select id="hpAirport" class="form-control" required>
+                <option value="">Select airport</option>
+                <option value="LHR">London Heathrow</option>
+                <option value="LGW">London Gatwick</option>
+                <option value="STN">London Stansted</option>
+                <option value="LTN">London Luton</option>
+                <option value="MAN">Manchester</option>
+                <option value="BHX">Birmingham</option>
+                <option value="EDI">Edinburgh</option>
+                <option value="GLA">Glasgow</option>
+                <option value="BRS">Bristol</option>
+                <option value="NCL">Newcastle</option>
+                <option value="LBA">Leeds Bradford</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hpStayDate">Hotel check-in</label>
+              <input type="date" id="hpStayDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="hpRoomType">Room type</label>
+              <select id="hpRoomType" class="form-control" required>
+                <option value="D20">Double - 2 adults</option>
+                <option value="T20">Twin - 2 adults</option>
+                <option value="S10">Single - 1 adult</option>
+                <option value="F22">Family - 2 adults 2 children</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hpInDate">Return from trip</label>
+              <input type="date" id="hpInDate" class="form-control" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Search hotel + parking</button>
+        </form>
+
+        <!-- Hotel Only Form -->
+        <form class="search-form" id="hotelForm" data-product="hotel">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelAirport">Airport</label>
+              <select id="hotelAirport" class="form-control" required>
+                <option value="">Select airport</option>
+                <option value="LHR">London Heathrow</option>
+                <option value="LGW">London Gatwick</option>
+                <option value="STN">London Stansted</option>
+                <option value="LTN">London Luton</option>
+                <option value="MAN">Manchester</option>
+                <option value="BHX">Birmingham</option>
+                <option value="EDI">Edinburgh</option>
+                <option value="GLA">Glasgow</option>
+                <option value="BRS">Bristol</option>
+                <option value="NCL">Newcastle</option>
+                <option value="LBA">Leeds Bradford</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelStayDate">Check-in date</label>
+              <input type="date" id="hotelStayDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="hotelRoomType">Room type</label>
+              <select id="hotelRoomType" class="form-control" required>
+                <option value="D20">Double - 2 adults</option>
+                <option value="T20">Twin - 2 adults</option>
+                <option value="S10">Single - 1 adult</option>
+                <option value="F22">Family - 2 adults 2 children</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Search hotels</button>
+        </form>
+
+        <!-- Lounge Form -->
+        <form class="search-form" id="loungeForm" data-product="lounge">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="loungeAirport">Airport</label>
+              <select id="loungeAirport" class="form-control" required>
+                <option value="">Select airport</option>
+                <option value="LHR">London Heathrow</option>
+                <option value="LGW">London Gatwick</option>
+                <option value="STN">London Stansted</option>
+                <option value="LTN">London Luton</option>
+                <option value="MAN">Manchester</option>
+                <option value="BHX">Birmingham</option>
+                <option value="EDI">Edinburgh</option>
+                <option value="GLA">Glasgow</option>
+                <option value="BRS">Bristol</option>
+                <option value="NCL">Newcastle</option>
+                <option value="LBA">Leeds Bradford</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="loungeOutDate">Departure date</label>
+              <input type="date" id="loungeOutDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="loungeOutTime">Arrival time</label>
+              <input type="time" id="loungeOutTime" class="form-control" value="09:00" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="loungeAdults">Adults (12+)</label>
+              <input type="number" id="loungeAdults" class="form-control" value="2" min="1" max="9" required>
+            </div>
+            <div class="form-group">
+              <label for="loungeChildren">Children (2-11)</label>
+              <input type="number" id="loungeChildren" class="form-control" value="0" min="0" max="9">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Search lounges</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">🔒</div>
+          <h3>Secure Parking</h3>
+          <p>CCTV monitored, Park Mark approved facilities with full insurance cover</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">💰</div>
+          <h3>Best Price Promise</h3>
+          <p>Find it cheaper elsewhere and we'll match it</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">⭐</div>
+          <h3>Trusted Service</h3>
+          <p>Thousands of 5-star reviews from satisfied customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Airport Parking. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
